@@ -1,10 +1,17 @@
-import React from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+
+import Hero from "./sections/hero";
+import NavBar from "./sections/NavBar";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
   return (
-    <div className="text-3xl text-indigo-800">
-      GSAP powered GTA VI landing page
-    </div>
+    <main>
+      <NavBar />
+      <Hero />
+    </main>
   );
 };
 
